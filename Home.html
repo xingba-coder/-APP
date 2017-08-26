@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="UTF-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+	<script src="js/flexible_css.debug.js"></script>
+	<script src="js/flexible.debug.js"></script>
+    <link rel="stylesheet" href="css/frozen.css">
+	<link rel="stylesheet" href="css/Home.css">
+	<link rel="stylesheet" href="iconfont-home/iconfont.css">
+</head>
+<body>
+	<!-- 头部文字 -->
+	<div class="header">
+		<div class="h_left h_all">青蒿商城</div>
+		<div class="h_right h_all">
+			<a href="Login.html">登录</a>
+			<span style="float:left;">|</span>
+			<a href="Register.html">注册</a>
+			<a href="Empty-cart.html" class="h_cart"><i class="iconfont">&#x3434;</i></a>
+		</div>
+	</div>
+	<!-- 图片轮播 -->
+	<div class="ui-slider">
+	    <ul class="ui-slider-content" style="width: 500%">
+	        <li><img src="image/In-1.jpg"></li>
+	        <li><img src="image/In-2.jpg"></li>      
+	        <li><img src="image/In-3.jpg"></li>
+	        <li><img src="image/In-4.jpg"></li>      
+	        <li><img src="image/In-5.jpg"></li>
+	    </ul>
+	</div>
+	<!-- 商品分类 -->
+	<div class="content">
+		<div class="c_one c_text">男鞋</div>
+		<ul class="c_img"><!-- <img src="image/In-man.jpg"> -->
+			<li><a href="manSkateShoes.html">板鞋</a></li>
+			<li><a href="manBasketballShoes.html">篮球鞋</a></li>
+			<li><a href="manClothShoes.html">布鞋</a></li>
+			<li><a href="manSportShoes.html">运动鞋</a></li>
+		</ul>
+	</div>
+	<div class="content">
+		<div class="c_two c_text">女鞋</div>
+		<ul class="c_img"><!-- <img src="image/In-woman.jpg"> -->
+			<li><a href="womanSkateShoes.html">板鞋</a></li>
+			<li><a href="womanBasketballShoes.html">篮球鞋</a></li>
+			<li><a href="womanClothShoes.html">布鞋</a></li>
+			<li><a href="womanSportShoes.html">运动鞋</a></li>
+		</ul>
+	</div>
+	<div class="content">
+		<div class="c_three c_text">儿童</div>
+		<ul class="c_img"><!-- <img src="image/In-child.jpg"> -->
+			<li><a href="childSkateShoes.html">板鞋</a></li>
+			<li><a href="childBasketballShoes.html">篮球鞋</a></li>
+			<li><a href="childClothShoes.html">布鞋</a></li>
+			<li><a href="childSportShoes.html">运动鞋</a></li>
+		</ul>
+	</div>
+	<div class="content">
+		<div class="c_four c_text">配件</div>
+		<ul class="c_img"><!-- <img src="image/In-other.jpg"> -->
+			<li><a href="##">护腕</a></li>
+			<li><a href="##">护指</a></li>
+			<li><a href="##">护膝</a></li>
+			<li><a href="##">护肩</a></li>
+		</ul>
+	</div>
+	<div class="footer">青蒿官方直营&nbsp&nbsp<span>powered&nbspby&nbspQing&nbsphao</span></div>
+
+	<script src="js/zepto.min.js"></script>
+    <script src="js/frozen.js"></script>
+    <!-- 头部轮播图 -->
+    <script>
+    (function(){
+
+        var slider = new fz.Scroll('.ui-slider', {
+            role: 'slider',
+            indicator: true,
+            autoplay: true,
+            interval: 3000
+        });
+    })();
+    </script>
+</body>
+</html>

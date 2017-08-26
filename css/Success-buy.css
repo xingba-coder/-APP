@@ -1,0 +1,44 @@
+		html{font-size:20px;}
+		*{margin:0;padding:0;font-family:微软雅黑;}
+		/*根据不同dpr使用不同字号*/
+		.content{font-size: 15px;}
+		[data-dpr="2"].content{font-size: 20px;}
+
+		.header,.txt,.foot,.other,.s_submit{font-size:20px;}
+
+		[data-dpr="2"].font,[data-dpr="2"].txt,[data-dpr="2"].head,[data-dpr="2"].other
+		,[data-dpr="2"].s_submit{font-size:30px;}
+
+		[date-dpr="3"].font,[data-dpr="3"].txt,[data-dpr="3"].head,[data-dpr="3"].other
+		,[data-dpr="3"].s_submit{font-size:40px;}
+
+		.header{width: 10rem;
+				height: 3rem;
+				margin: 0.5rem auto;
+				border-bottom: 1px solid gray;
+			}
+		.header img{float:left;
+					width: 2rem;
+					height: 2rem;
+					margin-top:0.5rem;
+					margin-left: 0.5rem;
+				}
+		.header .txt{width: 7rem;
+					 height: 3rem;
+					 float: right;
+					 line-height: 3rem;
+					}
+		.again{width: 9rem;
+			   height: 2rem;
+			   margin: 0 auto;
+			}
+		.again a{display: inline-block;
+		  text-decoration: none;
+		  width: 9rem;
+		  height: 2rem;
+		  border-radius: 5px;
+		  background: #E62727;
+		  color: #fff;
+		  text-align: center;
+		  line-height: 2rem;
+		  }	

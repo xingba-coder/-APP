@@ -1,0 +1,176 @@
+		*{margin:0;padding:0;font-family:微软雅黑;}
+		/*字体图标引入文件*/
+		@font-face {font-family: 'iconfont';
+    	src: url('Homefont-face/iconfont.eot'); /* IE9*/
+    	src: url('Homefont-face/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    	url('Homefont-face/iconfont.woff') format('woff'), /* chrome、firefox */
+    	url('Homefont-face/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    	url('Homefont-face/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+		}
+		/*字体图标样式*/
+		.iconfont{
+			    font-family:"iconfont" !important;
+			    font-size:1.25rem;font-style:normal;
+			    -webkit-font-smoothing: antialiased;
+			    -webkit-text-stroke-width: 0.2px;
+			    -moz-osx-font-smoothing: grayscale;
+			}
+		/*根据不同dpr使用不同字号*/
+		.header{font-size: 20px;}
+		[data-dpr="2"] .header{font-size:40px;}
+		[data-dpr="3"] .header{font-size: 60px;}
+
+		.color{font-size: 12px;}
+		[data-dpr="2"] .color{font-size:24px;}
+		[data-dpr="3"] .color{font-size: 36px;}
+
+		.size{font-size: 12px;}
+		[data-dpr="2"] .size{font-size:24px;}
+		[data-dpr="3"] .size{font-size: 36px;}
+
+		.quantity{font-size: 12px;}
+		[data-dpr="2"] .quantity{font-size:24px;}
+		[data-dpr="3"] .quantity{font-size: 36px;}
+
+		.content{font-size: 16px;}
+		[data-dpr="2"] .content{font-size:32px;}
+		[data-dpr="3"] .content{font-size: 48px;}
+
+		.footer{font-size: 16px;}
+		[data-dpr="2"] .footer{font-size:32px;}
+		[data-dpr="3"] .footer{font-size: 48px;}
+
+		.buy .other{font-size: 16px;}
+		[data-dpr="2"] .buy .other{font-size:32px;}
+		[data-dpr="3"] .buy .other{font-size: 48px;}
+
+		/*头部*/
+		.header{width: 10rem;
+				height: 2rem;
+				margin: 0 auto;
+				background: #DAD8D8;
+				text-align: center;
+				line-height: 2rem;
+			}
+		/*鞋子轮播区域*/
+		.photo{
+			   height: 2rem;
+			   background:#fff;
+			}
+		.photo li{text-align: center;}
+		.photo li img{
+			   width:5rem;
+			   height:5rem;
+			   display: inline-block;
+			}
+		/*商品介绍和价格*/
+		.content{
+				 height: 2.5rem;
+				 margin:0 auto;
+				 padding:0 0.2rem;
+				}
+		.content .price{
+				 color:#DC3348;
+				 font-weight: bold;
+				}
+		.content p{height: 1rem;}
+		.content h4{color:red;
+					margin-top:0.5rem;
+					height: 0.65rem;
+				}
+		.content .span1{text-decoration: line-through;
+					  color:gray;
+					}
+		.content .span2{color:gray;}
+		/*颜色尺码*/
+		.color{padding:0 0.2rem;
+			   margin: 0.5rem auto;
+			}
+		.color ul{display:table;}
+		.color ul li{list-style: none;
+					 float: left;
+					 border: 1px solid gray;
+					 border-radius:5px;
+					 padding:0.3rem;
+					 margin-left: 0.3rem;
+					 margin-top:0.25rem;
+					 }
+		.size{padding:0 0.2rem;
+			   height:3.5rem;
+			   margin: 0 auto;
+			   border-bottom: 1px solid gray;
+			}
+		.size ul li{list-style: none;
+					 float: left;
+					 border: 1px solid gray;
+					 border-radius:5px;
+					 padding:0.3rem;
+					 margin-left: 0.35rem;
+					 margin-top:0.25rem;
+					 }
+		/*数量*/
+		.quantity{padding:0 0.2rem;
+				  height:2rem;
+				  margin:0.5rem auto;
+				}
+		.quantity .q_num{margin-left:0.2rem;}
+		.quantity .q_num .number{padding:0.25rem 0.5rem;
+						  float:left;
+						  margin-top:0.25rem;
+						  border:1px solid gray;
+						}
+		.quantity .q_num .number:nth-child(n+2){border-left: 0px;}
+		.quantity .kucun{margin-top:0.5rem;
+						 	    margin-left: 5.5rem;
+						}
+		/*购买按钮*/
+		.buy{width: 10rem;
+			 height: 2rem;
+			 margin: 0 auto;
+			}
+		.change-color{
+			background: #DC3348;
+			color:#fff;
+		}
+		.buy a{text-decoration: none;
+					color:#fff;
+					display: inline-block;
+					width:4rem;
+					height: 1.5rem;
+					margin-top: 0.25rem;
+					border-radius: 5px;
+					text-align: center;
+					line-height: 1.5rem;
+					}
+		.buy .b_buy{margin-left: 0.2rem;
+					background: red;
+				}
+		.buy .b_cart{
+					background: green;
+					}
+		.buy .b_icont{
+					display: inline-block;
+					width:1rem;
+					height: 1rem;
+					margin-left: 0.25rem;
+					color: #D6C0C0;
+					border-radius: 5px;
+					}
+		/*底部说明*/
+		.footer{width:10rem;
+				height:3rem;
+				margin:0.5rem auto 0;
+			    background: gray;
+			    color: #fff;
+			    font-size: 15px;
+			    text-align: center;
+			    line-height:1rem;
+			}
+		.footer .f_cont{display: inline-block;
+						width: 0.5rem;
+						height: 0.5rem;
+						color:#fff;
+					}
+		.footer .f_cont1{background:red;}
+		.footer .f_cont2{background:pink;}
+		.footer .f_cont3{background:blue;}

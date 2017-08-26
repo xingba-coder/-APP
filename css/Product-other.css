@@ -1,0 +1,72 @@
+/*根据不同dpr使用不同字号*/
+		.content{font-size: 16px;}
+		[data-dpr="2"] .content{font-size:32px;}
+		[data-dpr="3"] .content{font-size: 48px;}
+		.header{font-size: 32px;}
+		[data-dpr="2"] .header{font-size:48px;}
+		[data-dpr="3"] .header{font-size:96px;}
+		.footer{font-size: 16px;}
+		[data-dpr="2"] .footer{font-size:32px;}
+		[data-dpr="3"] .footer{font-size: 48px;}
+		/*[date-dpr="3"] .content,.header,.footer{font-size:60px;*/}
+	/*html{font-size:20px;}*/
+	body{background: #DAD8D8;}
+	*{margin:0;padding:0;font-family: 微软雅黑;}
+	.head{background:url('../image/Man.jpg') no-repeat;
+		 background-size: cover;
+		 height:3.5rem;
+		 text-align: center;
+		 line-height: 3.5rem;
+		 color: #9C7583;
+		 }
+	.content{
+			 margin-top:2%;
+			 background: #fff;
+			 display:flex;
+			 padding:0.2rem;
+			 border-top:1px solid #D0CBCB;
+			 }
+	.content .c_pic img{
+		width:3.2rem;
+		height:3.2rem;
+		vertical-align: top;
+	}
+	.content .c_text{
+					flex:1;
+					padding:0.2rem;
+					position: relative;
+				}
+	.content .c_text p{
+   					   white-space: nowrap;
+    				   text-overflow: ellipsis;
+					   overflow: hidden;
+					   margin-bottom: 0.15rem;
+					   }
+	.content .c_text strong{
+		color: #DC3348;
+		font-weight: bold;
+	}
+	.content .c_text h4{
+		color: #DC3348;
+		margin-top: 0.15rem;
+	}
+	.content .c_text a{
+					   position: absolute;
+					   bottom:0.02px;
+					   right:0.2rem;
+					   color:#fff;
+					   font-weight: bold;
+					   background: red;
+					   padding:0.2rem 0.4rem ;
+					   text-decoration: none;
+					}
+	.content .c_text .p_before{
+							   text-decoration: line-through;
+							   color:gray;
+							}
+	.footer{background: gray;
+			height: 2rem;
+			text-align: center;
+			line-height: 2rem;
+			color: #fff;
+		}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>商品购买选色选码</title>
+	<meta charset="utf-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+	<script src="js/flexible_css.debug.js"></script>
+	<script src="js/flexible.debug.js"></script>
+    <link rel="stylesheet" href="css/frozen.css">
+	<link rel="stylesheet" type="text/css" href="css/Buy.css">
+	<link rel="stylesheet" type="text/css" href="iconfont-home/iconfont.css">
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header">商品详情</div>
+	<!-- 鞋子轮播区域 -->
+	<div class="ui-slider photo">
+	    <ul class="ui-slider-content" style="width: 500%">
+	        <li><img src="image/buy1.jpg"></li>
+	        <li><img src="image/buy2.jpg"></li>      
+	        <li><img src="image/buy3.jpg"></li>
+	        <li><img src="image/buy4.jpg"></li>      
+	        <li><img src="image/buy5.jpg"></li>
+	    </ul>
+	</div>
+	<!-- 商品介绍和价格 -->
+	<div class="content">
+		<p>安踏 篮球系列 男子防滑耐磨霸道系列篮球鞋</p>
+		<p class="price">价格:$50</p>
+		<span class="span1">吊牌价:$70</span>
+		<span class="span2">折扣:%71(折让:$20)</span>
+	</div>
+	<!-- 颜色尺码 -->
+	<div class="color" id="color">
+		<div class="other">颜色分类</div>
+		<ul id="color-ul">
+			<li>正蓝/安踏白/大红</li>
+			<li>大红/黑/安踏白/阳光橙</li>
+			<li>黑/安踏白</li>
+		</ul>
+	</div>
+	<div class="size" id="size">
+		<div class="other">尺码</div>
+		<ul id="size-ul">
+			<li>39</li>
+			<li>40</li>
+			<li>40.5</li>
+			<li>41</li>
+			<li>42</li>
+			<li>42.5</li>
+			<li>43</li>
+			<li>44.5</li>
+		</ul>
+	</div>
+	<!-- 数量 -->
+	<div class="quantity" id="quantity">
+		<div class="other">数量</div>
+		<div class="q_num" id="quantity-num">
+			<div class="number" id="sub">-</div>
+			<div class="number" id="num">0</div>
+			<div class="number" id="add">+</div>
+		</div>
+		<div class="kucun">库存:<span id="kucun-num">999</span>件</div>
+	</div>
+	<!-- 购买按钮 -->
+	<div class="buy">
+			<a href="Full-cart.html" class="b_buy other">立即购买</a>
+			<a href="Full-cart.html" class="b_cart other">加入购物车</a>
+			<a href="Empty-cart.html" class="b_icont"><i class="iconfont">&#x3434;</i></a>
+	</div>
+	<!-- 底部说明 -->
+	<div class="footer">
+		<div>岳阳青蒿电子商务有限公司</div>
+		<div>
+			<span class="f_cont f_cont1"></span>青蒿官方直营
+			<span class="f_cont f_cont2"></span>正品保证
+			<span class="f_cont f_cont3"></span>七天无理由退货
+		</div>
+		<span>PoweredByQingHao</span>
+	</div>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<!-- 数量加减 -->
+    <script type="text/javascript">
+        var i = parseInt($("#num").html());
+        var num = parseInt($("#kucun-num").html());
+        function addfuction(i){
+        	$(i).addClass("change-color").siblings().removeClass("change-color");
+        }
+    	$("#sub").click(function(){
+    		if(i>0){
+    			i--;
+    			num++;
+    			$("#num").html(i);
+    			$("#kucun-num").html(num);
+    		}
+    	});
+    	$("#add").click(function(){
+    		i++;
+    		num--;
+    		$("#num").html(i);
+    		$("#kucun-num").html(num);
+    	});
+    	$("#color-ul li").click(function(){
+    		addfuction(this);
+    	});
+    	$("#size-ul li").click(function(){
+    		addfuction(this);
+    	});
+    </script>
+	<script src="js/zepto.min.js"></script>
+    <script src="js/frozen.js"></script>
+    <!-- 头部轮播图 -->
+    <script>
+    (function(){
+        var slider = new fz.Scroll('.ui-slider', {
+            role: 'slider',
+            indicator: true,
+            autoplay: true,
+            interval: 3000
+        });
+    })();
+    </script>
+
+</body>
+</html>

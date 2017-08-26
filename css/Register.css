@@ -1,0 +1,77 @@
+		html{font-size:20px;}
+		*{font-family:微软雅黑;}
+		/*根据不同dpr使用不同字号*/
+		.header,.txt,.foot,.other,.s_submit{font-size:20px;}
+
+		[data-dpr="2"].font,[data-dpr="2"].txt,[data-dpr="2"].head,[data-dpr="2"].other
+		,[data-dpr="2"].s_submit{font-size:30px;}
+
+		[date-dpr="3"].font,[data-dpr="3"].txt,[data-dpr="3"].head,[data-dpr="3"].other
+		,[data-dpr="3"].s_submit{font-size:40px;}
+
+		/*头部logo*/
+		.head_logo{background-image:url(../image/Login.jpg);
+			  background-size:cover;
+			  background-repeat:no-repeat;
+			  width:10rem;
+			  height:5rem;
+			  margin:0 auto;
+			  }
+		/*邮箱及手机注册按钮*/
+		.name{
+			  width:9rem;
+			  height:2rem;
+			  line-height:2rem;
+			  margin:0rem auto;
+			  }
+		.header{width:9rem;
+				height:1.25rem;
+				margin:0 auto 1rem;
+				display:flex;
+				}
+		.head{flex:1;
+			  text-align:center;
+			  line-height:1.25rem;
+			}
+		.h_email{
+				 color:red;
+				 border:1px solid red;
+				 border-radius: 6px;
+				}
+		.h_phone{margin-left:0.2rem;
+				 border:1px solid red;
+				 color:red;
+				 border-radius: 6px;
+					}
+		.header a{text-decoration: none;}
+		/*账号密码注册*/
+		.all_txt{width:10rem;
+				 height:7.5rem;
+				 margin:0 auto; 
+				}
+		.txt{width:9rem;
+			 height:1.5rem;
+			 margin-left:0.4rem;	
+			 border-radius:6px;
+			 border:1px solid gray;
+			 padding-left:0.2rem;
+			 }
+		.txt2,.txt3,.txt4{margin-top:0.5rem;}
+		.hide{display: none;margin-top:0.5rem;}
+		/*提交按钮*/
+		.submit{
+			  width:9rem;
+			  height:2rem;
+			  line-height:2rem;
+			  margin:1rem auto;
+			}
+		.submit a{width:9rem;
+			  	  height:1.5rem;
+			  	  display: inline-block;
+			  	  background: red;
+			  	  text-decoration: none;
+			  	  color:#fff;
+			  	  border-radius: 6px;
+			  	  text-align: center;
+			  	  line-height:1.5rem;
+			  	}
